@@ -1,19 +1,19 @@
 /**
  * @author gp
- * @datetime 2012-12-4
- * @description app.js
+ * @datetime 2012-10-16
+ * @description 入口文件
  */
+ 
 
- Ambow.getJSON('http://localhost/webMobile/data/list.php',function(data){
-		var htm ='';
-		Ambow.each(data,function(rec,idx){
-			htm += '<li><a href="#">'+rec.name+'</a></li>';
-		});
-		
-		$('#video_list').html(htm);
-		
-		$('#video_list').listview('refresh');
-		$('#video_list').bind('click',function(e,ui){
-			alert(1);
-		});
-	});
+ App.container = $('#page_content');
+ App.container.bind('beforeLoad',function(){
+ 	//alert('加载前');
+ });
+ App.container.bind('afterLoad',function(){
+ 	//alert('加载后');
+ });
+
+ Ambow.loadPage('app/controller/test1.js');
+
+ 
+

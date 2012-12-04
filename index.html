@@ -8,29 +8,25 @@
 <link rel="stylesheet" href="lib/jquery.mobile-1.2.0.css" />
 <script src="lib/jquery.js"></script>
 <script  src="lib/base.js"></script>
-<script src="lib/jquery.mobile-1.2.0.js"></script>
+
+<script src="lib/Controller.js"></script>
 </head>
 <body>
+
 	<div data-role="page">
 
 		<div data-role="header">
-			<h1>My Title</h1>
+			<h1 id="page_title">My Title</h1>
 		</div>
 		<!-- /header -->
 
-		<div data-role="content">
-			<ul id="video_list" data-role="listview" data-inset="true" data-filter="true">
-			</ul>
-			<a href="#secondPage" data-role="button"> secondPage</a>
-			<a href="app/template/test1.html" rel="external" data-role="button"> thirdPage</a>
+		<div id="page_content" data-role="content">
+			
 		</div>
 		<!-- /content -->
 
 	</div>
-	<!-- /page -->
-	<div data-role="page" id="secondPage">
-		22222
-	</div>
 </body>
+<script type="text/javascript" src="lib/History.js"></script>
 <script type="text/javascript" src="app/app.js"></script>
 </html>
