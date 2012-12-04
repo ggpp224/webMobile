@@ -8,10 +8,10 @@ App.controller = Ambow.extend(App.Controller,{
 	tplName:'test1',
 	
 	control: function(){
-				
+		alert(11);		
 	}
 	
 	
 
 });
-App.currentPage = new App.controller();
+new App.controller();
